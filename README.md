@@ -66,3 +66,20 @@ Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tie
 3. Análisis.
 	- Se deja evidencia de la realización de los experimentos.
 	- Los análisis realizados son consistentes.
+
+## Solución
+
+**Parte I Hilos Java**
+
+Al usar .start() tenemos:
+
+![img.png](img/img.png)
+
+Al usar .run() tenemos:
+
+![img_1.png](img/img_1.png)
+
+Cuando usamos run empieza a correr el hilo pero el siguiente hilo no empieza hasta que el primero acabe. Mientras que con start corre cada hilo
+en simultaneo, los corre de manera paralela.
+
+
