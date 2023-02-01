@@ -5,22 +5,25 @@
  */
 package edu.eci.arsw.math;
 
-import edu.eci.arsw.threads.Calculadora;
-import edu.eci.arsw.math.PiDigits.*;
-import java.util.Arrays;
-
+import java.lang.Runtime;
 /**
  *
  * @author hcadavid
  */
 public class Main {
 
+    private static Runtime runtime = Runtime.getRuntime();
+
     public static void main(String a[]) {
 
-//        long startTime = System.nanoTime();
+        int procesadores = runtime.availableProcessors();
 
-        PiDigits.getDigits(0, 30, 3);
+        PiDigits.getDigits(0, 100000, 200);
 
+//    boolean running = true;
+//    while (running) {
+//
+//    }
 
 
 //        long endTime = System.nanoTime();

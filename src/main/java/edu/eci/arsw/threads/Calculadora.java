@@ -12,7 +12,9 @@ public class Calculadora extends Thread{
     private static int DigitsPerSum = 8;
     private static double Epsilon = 1e-17;
 
-    private String digitos;
+    private static String digitos;
+
+    private static byte[] digi;
 
 
     public Calculadora(int a, int b){
@@ -45,6 +47,7 @@ public class Calculadora extends Thread{
             sum = 16 * (sum - Math.floor(sum));
             digits[i] = (byte) sum;
         }
+        digi = digits;
         digitos = (bytesToHex(digits));
     }
 
@@ -127,8 +130,10 @@ public class Calculadora extends Thread{
         return sb.toString();
     }
 
-    public String getDigitos(){
+    public static String getDigitos(){
         return digitos;
     }
+
+    public byte[] getbytes(){return digi;}
 
 }

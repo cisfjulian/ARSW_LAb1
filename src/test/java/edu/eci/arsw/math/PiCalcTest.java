@@ -5,6 +5,7 @@
  */
 package edu.eci.arsw.math;
 
+import edu.eci.arsw.threads.Calculadora;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -39,7 +40,10 @@ public class PiCalcTest {
 
         for (int start = 0; start < expected.length; start++) {
             for (int count = 0; count < expected.length - start; count++) {
-                byte[] digits = PiDigits.getDigits(start, count);
+                PiDigits.getDigits(start,count,1);
+                Calculadora calculadora = new Calculadora(start, count);
+                byte[] digits = calculadora.getbytes();
+                // byte[] digits = calculadora.getDigitos();
                 assertEquals(count, digits.length);
 
                 for (int i = 0; i < digits.length; i++) {
