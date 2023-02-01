@@ -17,15 +17,17 @@ public class Main {
 
     public static void main(String a[]) {
 
-        long startTime = System.nanoTime();
+//        long startTime = System.nanoTime();
 
         PiDigits.getDigits(0, 30, 3);
 
-        long endTime = System.nanoTime();
-        System.out.println("-------------------------------------------");
-        System.out.println(endTime - startTime);
 
-        System.out.println("-------------------------------------------");
+
+//        long endTime = System.nanoTime();
+//        System.out.println("-------------------------------------------");
+//        System.out.println(endTime - startTime);
+//
+//        System.out.println("-------------------------------------------");
 
 
 //        System.out.println(bytesToHex(PiDigits.getDigits(0, 10)));

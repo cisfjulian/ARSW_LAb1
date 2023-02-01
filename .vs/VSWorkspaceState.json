@@ -1,0 +1,20 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\main",
+    "\\src\\main\\java",
+    "\\src\\main\\java\\edu",
+    "\\src\\main\\java\\edu\\eci",
+    "\\src\\main\\java\\edu\\eci\\arsw",
+    "\\src\\main\\java\\edu\\eci\\arsw\\math",
+    "\\src\\test",
+    "\\src\\test\\java",
+    "\\src\\test\\java\\edu",
+    "\\src\\test\\java\\edu\\eci",
+    "\\src\\test\\java\\edu\\eci\\arsw",
+    "\\src\\test\\java\\edu\\eci\\arsw\\math"
+  ],
+  "SelectedNode": "\\pom.xml",
+  "PreviewInSolutionExplorer": false
+}
